@@ -74,5 +74,12 @@ namespace consoleCalculator
                 Console.WriteLine("false! Try again");
             }
         }
+
+        public static double Factorial(double num1)
+        {
+            double result=0;
+            
+            return result;
+        }
     }
 }
