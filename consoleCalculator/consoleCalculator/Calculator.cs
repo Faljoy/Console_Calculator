@@ -55,5 +55,25 @@ namespace consoleCalculator
             return x;
         }
 
+        public static bool OperatorInput(out string mathOperator)
+        {
+            mathOperator = Console.ReadLine();
+            List<string> operatorWithSecondArguments = new List<string> { "+", "-", "*", "/", "%", "^" };
+            List<string> operatorWithOneArguments = new List<string> { "sqrt", "!" };
+            while (true)
+            {
+                if (operatorWithSecondArguments.Contains(mathOperator))
+                {
+                    return true;//нужно второе число
+                }
+                else if (operatorWithOneArguments.Contains(mathOperator))
+                {
+                    return false;//ввож второго числа пропускается
+                }
+                Console.WriteLine();
+                Console.WriteLine("false! Try again");
+            }
+        }
+
     }
 }
