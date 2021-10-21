@@ -47,6 +47,8 @@ namespace consoleCalculator
                     Console.WriteLine("False");
                     break;
             }
+            Console.WriteLine("Result: ");
+            Console.Write(result);
         }
     }
 }
