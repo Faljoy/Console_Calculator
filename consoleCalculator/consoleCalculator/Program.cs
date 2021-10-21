@@ -40,9 +40,9 @@ namespace consoleCalculator
                 case "sqrt":
                     result = Calculator.Sqrt(firstOperator);
                     break;
-                //case "!":
-                    //result = Calculator.factorial(firstOperator);
-                   // break;
+                case "!":
+                    result = Calculator.Factorial(firstOperator);
+                    break;
                 default:
                     Console.WriteLine("False");
                     break;
