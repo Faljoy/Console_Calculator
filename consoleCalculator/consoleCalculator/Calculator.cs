@@ -68,12 +68,11 @@ namespace consoleCalculator
                 }
                 else if (operatorWithOneArguments.Contains(mathOperator))
                 {
-                    return false;//ввож второго числа пропускается
+                    return false;//ввод второго числа пропускается
                 }
                 Console.WriteLine();
                 Console.WriteLine("false! Try again");
             }
         }
-
     }
 }
