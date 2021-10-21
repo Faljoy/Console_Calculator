@@ -1,0 +1,13 @@
+D:\курсы\обучение\21.10.21\consoleCalculator\consoleCalculator\bin\Debug\netcoreapp3.1\consoleCalculator.exe
+D:\курсы\обучение\21.10.21\consoleCalculator\consoleCalculator\bin\Debug\netcoreapp3.1\consoleCalculator.deps.json
+D:\курсы\обучение\21.10.21\consoleCalculator\consoleCalculator\bin\Debug\netcoreapp3.1\consoleCalculator.runtimeconfig.json
+D:\курсы\обучение\21.10.21\consoleCalculator\consoleCalculator\bin\Debug\netcoreapp3.1\consoleCalculator.runtimeconfig.dev.json
+D:\курсы\обучение\21.10.21\consoleCalculator\consoleCalculator\bin\Debug\netcoreapp3.1\consoleCalculator.dll
+D:\курсы\обучение\21.10.21\consoleCalculator\consoleCalculator\bin\Debug\netcoreapp3.1\consoleCalculator.pdb
+D:\курсы\обучение\21.10.21\consoleCalculator\consoleCalculator\obj\Debug\netcoreapp3.1\consoleCalculator.csprojAssemblyReference.cache
+D:\курсы\обучение\21.10.21\consoleCalculator\consoleCalculator\obj\Debug\netcoreapp3.1\consoleCalculator.AssemblyInfoInputs.cache
+D:\курсы\обучение\21.10.21\consoleCalculator\consoleCalculator\obj\Debug\netcoreapp3.1\consoleCalculator.AssemblyInfo.cs
+D:\курсы\обучение\21.10.21\consoleCalculator\consoleCalculator\obj\Debug\netcoreapp3.1\consoleCalculator.csproj.CoreCompileInputs.cache
+D:\курсы\обучение\21.10.21\consoleCalculator\consoleCalculator\obj\Debug\netcoreapp3.1\consoleCalculator.dll
+D:\курсы\обучение\21.10.21\consoleCalculator\consoleCalculator\obj\Debug\netcoreapp3.1\consoleCalculator.pdb
+D:\курсы\обучение\21.10.21\consoleCalculator\consoleCalculator\obj\Debug\netcoreapp3.1\consoleCalculator.genruntimeconfig.cache

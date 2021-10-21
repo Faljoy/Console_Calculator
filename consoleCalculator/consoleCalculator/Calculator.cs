@@ -45,7 +45,7 @@ namespace consoleCalculator
         {
             string num = Console.ReadLine();
             bool check = Double.TryParse(num, out double x);
-            if (!check)
+            while (!check)
             {
                 Console.WriteLine("false input, try again:");
                 num = Console.ReadLine();
