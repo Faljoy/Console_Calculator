@@ -45,7 +45,7 @@ namespace consoleCalculator
         {
             string num = Console.ReadLine();
             bool check = Double.TryParse(num, out double x);
-            if (!check)
+            while (!check)
             {
                 Console.WriteLine("false input, try again:");
                 num = Console.ReadLine();
@@ -73,6 +73,13 @@ namespace consoleCalculator
                 Console.WriteLine();
                 Console.WriteLine("false! Try again");
             }
+        }
+
+        public static double Factorial(double num1)
+        {
+            double result=0;
+            
+            return result;
         }
     }
 }
