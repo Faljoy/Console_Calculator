@@ -6,6 +6,7 @@ namespace consoleCalculator
     {
         static void Main(string[] args)
         {
+
             
         }
     }
