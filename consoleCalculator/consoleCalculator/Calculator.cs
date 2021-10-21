@@ -38,8 +38,9 @@ namespace consoleCalculator
                 Console.WriteLine("It`s a 0");
                 return 0;
             }
-            return x / y;
+            return x % y;
         }
+
 
         public static double ReturnDouble()
         {
@@ -77,9 +78,15 @@ namespace consoleCalculator
 
         public static double Factorial(double num1)
         {
-            double result=0;
-            
-            return result;
+                double result = num1;
+            if (num1 <= 101)
+            {
+                for (int i = 1; i < num1; i++)
+                    result *= i;                   
+                return result;
+            }
+            Console.WriteLine("Big number!!");
+            return 0;
         }
     }
 }
