@@ -26,12 +26,7 @@ namespace consoleCalculator
             return num1 / num2;
         }
 
-        public static double Sqrt(double num1)
-        {
-            return Math.Sqrt(num1);
-        }
-
-        public static double Divide(double x , double y)
+        public static double Divide(double x, double y)
         {
             while (y == 0)
             {
@@ -58,11 +53,12 @@ namespace consoleCalculator
 
         public static bool OperatorInput(out string mathOperator)
         {
-            mathOperator = Console.ReadLine();
-            List<string> operatorWithSecondArguments = new List<string> { "+", "-", "*", "/", "%", "^" };
-            List<string> operatorWithOneArguments = new List<string> { "sqrt", "!" };
             while (true)
             {
+                mathOperator = Console.ReadLine();
+                List<string> operatorWithSecondArguments = new List<string> { "+", "-", "*", "/", "%", "^" };
+                List<string> operatorWithOneArguments = new List<string> { "sqrt", "!" };
+
                 if (operatorWithSecondArguments.Contains(mathOperator))
                 {
                     return true;//нужно второе число
@@ -78,15 +74,70 @@ namespace consoleCalculator
 
         public static double Factorial(double num1)
         {
-                double result = num1;
+            double result = num1;
             if (num1 <= 101)
             {
                 for (int i = 1; i < num1; i++)
-                    result *= i;                   
+                    result *= i;
                 return result;
             }
             Console.WriteLine("Big number!!");
             return 0;
+        }
+
+        public static double Sqrt(double num)
+        {
+            double sqrt;
+            double i;
+
+            for (i = 1; ; i++)
+            {
+                sqrt = i * i;
+                if (num == sqrt)
+                {
+                    break;
+                }
+                if (num < sqrt)
+                {
+                    i = i - 1;
+                    break;
+                }
+            }
+            if (num == 0) i = 0;
+            else if (num < 0) i = Double.NaN;
+            return i;
+        }
+
+        public static double Power(double num1, double num2)
+        {
+            double resultat = 1;
+            if (num2 >= 0)
+            {
+
+                for (int i = 0; i < num2; i++)
+                {
+                    resultat *= num1;
+                }
+            }
+            else
+            {
+                for (int i = 1; ; i++)
+                {
+                    int sqrt = i;
+                    for (int j = 1; j < -num2; j++) sqrt *= i;
+                    if (num1 == sqrt)
+                    {
+                        resultat = i;
+                        break;
+                    }
+                    if (num1 < sqrt)
+                    {
+                        resultat = i-1;
+                        break;
+                    }
+                }
+            }
+            return resultat;
         }
     }
 }

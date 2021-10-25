@@ -10,7 +10,7 @@ namespace consoleCalculator
             Console.WriteLine("Input you number:");
             double firstOperator = Calculator.ReturnDouble();
             Console.WriteLine();
-            Console.WriteLine("chose operator(+ - / * % sqrt !)");
+            Console.WriteLine("chose operator(+ - / * % sqrt ! ^)");
             string operatorInput;
             bool check = Calculator.OperatorInput(out operatorInput);
             double secondOperator=0;
@@ -42,6 +42,9 @@ namespace consoleCalculator
                     break;
                 case "!":
                     result = Calculator.Factorial(firstOperator);
+                    break;
+                case "^":
+                    result = Calculator.Power(firstOperator, secondOperator);
                     break;
                 default:
                     Console.WriteLine("False");

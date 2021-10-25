@@ -72,6 +72,7 @@ namespace consoleCalculator.UnitIest
         [TestCase(9, 3)]
         [TestCase(1, 1)]
         [TestCase(100,10)]
+        [TestCase(-100, double.NaN)]
         public void SqrtTest(double firstArgument, double expectedResult)
         {
             double actualResult = Calculator.Sqrt(firstArgument);
@@ -86,6 +87,17 @@ namespace consoleCalculator.UnitIest
         public void FactorialTest(double firstArgument, double expectedResult)
         {
             double actualResult = Calculator.Factorial(firstArgument);
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [TestCase(45, -3, 3)]
+        [TestCase(67, -3, 4)]
+        [TestCase(3, 3, 27)]
+        [TestCase(1, -1, 1)]
+        [TestCase(0, 0, 1)]
+        public void PowerTest(double firstArgument, double secondArgument, double expectedResult)
+        {
+            double actualResult = Calculator.Power(firstArgument,secondArgument);
             Assert.AreEqual(expectedResult, actualResult);
         }
     }
